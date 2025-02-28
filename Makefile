@@ -29,7 +29,7 @@ $(TOP_WORDS): $(FREQS)
 
 # Step 5: Generate table of word frequencies per paragraph
 $(TABLE): $(CLEANED) $(TOP_WORDS)
-	gawk -f ZZZ.awk PASS=1 $(TOP_WORDS) PASS=2 $(CLEANED) > $@
+	python3 ZZZ.py PASS=1 $(TOP_WORDS) PASS=2 $(CLEANED) > $@
 
 # Cleanup
 clean:

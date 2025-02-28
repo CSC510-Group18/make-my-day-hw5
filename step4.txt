@@ -1,0 +1,20 @@
+make clean table.txt; head table.txt # | column -s, -t
+make[1]: Entering directory '/home/kubjon/school/se/make-my-day-hw5'
+rm -f cleaned.txt tokens.txt word_counts.txt top.txt table.txt
+sed 's/[^a-zA-Z ]//g' data.txt | tr 'A-Z' 'a-z' > cleaned.txt
+gawk -f killstopXXX.awk cleaned.txt > stop.txt
+cat stop.txt | ./YYY | sort -nr > word_counts.txt
+gawk '$2 && NR <=10 {print $2}' word_counts.txt > top.txt
+python3 ZZZ.py PASS=1 top.txt PASS=2 cleaned.txt > table.txt
+make[1]: Leaving directory '/home/kubjon/school/se/make-my-day-hw5'
+we,data,key,engineering,challenging,do,aspect,example,and,however
+0,3,0,0,1,0,1,0,0,1
+1,0,1,0,3,0,0,0,0,2
+0,2,0,1,1,2,2,2,0,1
+1,0,1,2,0,0,0,1,1,2
+3,2,0,0,1,1,0,1,2,0
+1,2,1,1,2,1,3,1,0,0
+0,1,0,0,2,0,3,1,1,1
+2,0,2,3,2,1,1,0,1,2
+4,2,1,2,0,1,0,1,0,0
+
