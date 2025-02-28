@@ -1,0 +1,16 @@
+make clean stop.txt; head stop.txt
+make[1]: Entering directory '/workspaces/make-my-day-hw5'
+rm -f cleaned.txt tokens.txt word_counts.txt top.txt table.txt
+sed 's/[^a-zA-Z ]//g' data.txt | tr 'A-Z' 'a-z' > cleaned.txt
+gawk -f killstopXXX.awk cleaned.txt > stop.txt
+make[1]: Leaving directory '/workspaces/make-my-day-hw5'
+ challenging modern  future data yes
+ visualization performance storage  storage solve modern 
+data data indeed performance database analysis aspect isnt however
+storage learning  yes  performance
+challenges future   analysis   software consider 
+
+visualization challenging indeed  key   however  consider probability
+software future ai    yes
+science indeed  challenging  performance  optimization
+modern ai query  challenges how learning database machine

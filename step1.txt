@@ -1,0 +1,15 @@
+make clean cleaned.txt; head cleaned.txt
+make[1]: Entering directory '/workspaces/make-my-day-hw5'
+rm -f cleaned.txt tokens.txt word_counts.txt top.txt table.txt
+sed 's/[^a-zA-Z ]//g' data.txt | tr 'A-Z' 'a-z' > cleaned.txt
+make[1]: Leaving directory '/workspaces/make-my-day-hw5'
+it challenging modern a future data yes
+of visualization performance storage of storage solve modern in
+data data indeed performance database analysis aspect isnt however
+storage learning can yes is performance
+challenges future but the analysis be the software consider an
+
+visualization challenging indeed it key it it however be consider probability
+software future ai can can a yes
+science indeed is challenging but performance an optimization
+modern ai query can challenges how learning database machine
